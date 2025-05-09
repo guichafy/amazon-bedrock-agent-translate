@@ -1,0 +1,40 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Lambda para tradução pt-br → en-us usando AWS Bedrock
+
+Globals:
+  Function:
+    Timeout: 60
+    Runtime: python3.11
+
+Resources:
+  TranslateFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: app.lambda_handler
+      CodeUri: src/
+      Description: Tradução de pt-br para en-us via Bedrock
+      MemorySize: 512
+      Environment:
+        Variables:
+          BEDROCK_MODEL_ID: "amazon.titan-text-lite-v1"
+          BEDROCK_REGION: "us-east-1"
+      Policies:
+      - Statement:
+        - Effect: Allow
+          Action:
+          - bedrock:InvokeModel
+          Resource: "*"
+      Events:
+        ApiPost:
+          Type: Api
+          Properties:
+            Path: /translate
+            Method: post
+            Cors: "*"
+        ApiOptions:
+          Type: Api
+          Properties:
+            Path: /translate
+            Method: options
+            Cors: "*"

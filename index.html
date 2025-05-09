@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor de Texto Selecionado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Amazon BedRock Simple Demo</h1>
+        <div class="language-selection-topo">
+            <label for="target-language">Traduzir para:</label>
+            <select id="target-language">
+                <option value="en">Inglês</option>
+                <option value="es">Espanhol</option>
+                <!-- <option value="fr">Francês</option>
+                <option value="de">Alemão</option>
+                <option value="it">Italiano</option>
+                <option value="pt">Português</option>
+                <option value="ru">Russo</option>
+                <option value="ja">Japonês</option>
+                <option value="zh">Chinês</option> -->
+            </select>
+        </div>
+    </header>
+    
+    <main>
+        <div class="content">
+            <h2>Instruções</h2>
+            <p>Selecione qualquer texto abaixo para ver o botão de tradução:</p>
+            
+            <div class="sample-text">
+                <h3>Exemplo de texto em português</h3>
+                <p>Este é um exemplo de texto em português que pode ser selecionado para tradução. Basta selecionar qualquer parte deste texto para ver o botão de tradução aparecer.</p>
+                
+                <h3>Exemplo de texto em inglês</h3>
+                <p>This is an example of text in English that can be selected for translation. Simply select any part of this text to see the translation button appear.</p>
+                
+                <h3>Exemplo de texto em espanhol</h3>
+                <p>Este es un ejemplo de texto en español que se puede seleccionar para su traducción. Simplemente seleccione cualquier parte de este texto para ver cómo aparece el botón de traducción.</p>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Botão flutuante de tradução (inicialmente oculto) -->
+    <div id="translation-button" class="hidden">
+        <button><span class="icon">🌎</span> Translate</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
