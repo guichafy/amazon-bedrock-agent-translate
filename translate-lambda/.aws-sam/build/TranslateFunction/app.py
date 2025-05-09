@@ -30,7 +30,7 @@ def translate_single_text(text: str, target_language: str, bedrock, language_map
     Text: \"{clean_text}\"
     Translation:"""
 
-    model_id = os.environ.get("BEDROCK_MODEL_ID", "amazon.titan-text-lite-v1")
+    model_id = os.environ.get("BEDROCK_MODEL_ID", "amazon.nova-lite-v1:0")
     
     try:
         print(f"Traduzindo: '{clean_text}' para {target_language_name}")

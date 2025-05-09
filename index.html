@@ -3,49 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tradutor de Texto Selecionado</title>
+    <title>Itaú BBA - Soluções para Empresas</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Amazon BedRock Simple Demo</h1>
-        <div class="language-selection-topo">
-            <label for="target-language">Traduzir para:</label>
-            <select id="target-language">
-                <option value="en">Inglês</option>
-                <option value="es">Espanhol</option>
-                <!-- <option value="fr">Francês</option>
-                <option value="de">Alemão</option>
-                <option value="it">Italiano</option>
-                <option value="pt">Português</option>
-                <option value="ru">Russo</option>
-                <option value="ja">Japonês</option>
-                <option value="zh">Chinês</option> -->
-            </select>
+        <div class="header-container">
+            <div class="logo">Itaú BBA</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Soluções Corporativas</a></li>
+                    <li><a href="#">Mercado de Capitais</a></li>
+                    <li><a href="#">Investimentos</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                </ul>
+            </nav>
+            <div class="language-selection-topo">
+                <label for="target-language">Traduzir para:</label>
+                <select id="target-language">
+                    <option value="en">Inglês</option>
+                    <option value="es">Espanhol</option>
+                    <option value="fr">Francês</option>
+                    <option value="de">Alemão</option>
+                    <option value="it">Italiano</option>
+                    <option value="zh">Chinês</option>
+                </select>
+            </div>
         </div>
     </header>
     
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Soluções financeiras para grandes empresas</h1>
+            <p>Oferecemos estratégias personalizadas para atender às necessidades do seu negócio</p>
+            <button class="cta-button">Fale com um especialista</button>
+        </div>
+    </section>
+    
     <main>
         <div class="content">
-            <h2>Instruções</h2>
-            <p>Selecione qualquer texto abaixo para ver o botão de tradução:</p>
+            <section class="services">
+                <h2>Nossas Soluções</h2>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Crédito Corporativo</h3>
+                        <p>Soluções de financiamento personalizadas para atender às suas necessidades de capital de giro, investimentos e expansão. Nossa equipe de especialistas trabalha para oferecer as melhores condições do mercado para sua empresa.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <i class="fas fa-globe"></i>
+                        <h3>Comércio Exterior</h3>
+                        <p>Facilitamos suas operações internacionais com uma plataforma completa para importação, exportação e câmbio. Conte com nossa experiência para superar os desafios do mercado global e expandir seus negócios além fronteiras.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Fusões e Aquisições</h3>
+                        <p>Assessoria completa em processos de fusões, aquisições e reestruturações societárias. Nossa equipe altamente qualificada oferece suporte em todas as etapas, desde a avaliação inicial até a conclusão bem-sucedida da transação.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Gestão de Riscos</h3>
+                        <p>Proteja seu negócio contra volatilidade de mercado com nossas soluções de hedge e gestão de riscos. Desenvolvemos estratégias personalizadas para mitigar exposições cambiais, de taxa de juros e commodities.</p>
+                    </div>
+                </div>
+            </section>
             
-            <div class="sample-text">
-                <h3>Exemplo de texto em português</h3>
-                <p>Este é um exemplo de texto em português que pode ser selecionado para tradução. Basta selecionar qualquer parte deste texto para ver o botão de tradução aparecer.</p>
+            <section class="about">
+                <h2>Sobre o Itaú BBA</h2>
+                <p>O Itaú BBA é o maior banco corporativo da América Latina e faz parte do grupo Itaú Unibanco. Com mais de 30 anos de experiência no mercado financeiro, somos especialistas em atender empresas de grande porte e instituições financeiras.</p>
+                <p>Nossa presença internacional em mais de 20 países nos permite oferecer soluções globais com conhecimento local. Contamos com uma equipe de profissionais altamente qualificados, comprometidos em entregar as melhores soluções para nossos clientes.</p>
+                <p>Nosso compromisso é estabelecer relações de longo prazo, baseadas em confiança, transparência e excelência em serviços. Trabalhamos para compreender profundamente o seu negócio e oferecer soluções que gerem valor e impulsionem seu crescimento.</p>
+            </section>
+            
+            <section class="news">
+                <h2>Notícias e Insights</h2>
                 
-                <h3>Exemplo de texto em inglês</h3>
-                <p>This is an example of text in English that can be selected for translation. Simply select any part of this text to see the translation button appear.</p>
-                
-                <h3>Exemplo de texto em espanhol</h3>
-                <p>Este es un ejemplo de texto en español que se puede seleccionar para su traducción. Simplemente seleccione cualquier parte de este texto para ver cómo aparece el botón de traducción.</p>
-            </div>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-date">12 Mai 2025</div>
+                        <h3>Novas linhas de financiamento para projetos sustentáveis</h3>
+                        <p>O Itaú BBA anuncia o lançamento de novas linhas de crédito com condições especiais para projetos alinhados aos critérios ESG, reforçando nosso compromisso com o desenvolvimento sustentável.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                    
+                    <div class="news-card">
+                        <div class="news-date">05 Mai 2025</div>
+                        <h3>Relatório de perspectivas econômicas para o segundo semestre</h3>
+                        <p>Nossa equipe de economistas apresenta análises detalhadas sobre as tendências de mercado e projeções para os principais indicadores econômicos nos próximos meses.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                    
+                    <div class="news-card">
+                        <div class="news-date">28 Abr 2025</div>
+                        <h3>Itaú BBA lidera ranking de assessoria em operações de M&A</h3>
+                        <p>Pelo terceiro ano consecutivo, o Itaú BBA foi reconhecido como o banco líder em assessoria de fusões e aquisições na América Latina, de acordo com pesquisa da Dealogic.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Itaú BBA</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Sustentabilidade</a></li>
+                    <li><a href="#">Relações com Investidores</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Produtos e Serviços</h4>
+                <ul>
+                    <li><a href="#">Crédito Corporativo</a></li>
+                    <li><a href="#">Mercado de Capitais</a></li>
+                    <li><a href="#">Investment Banking</a></li>
+                    <li><a href="#">Tesouraria</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Pesquisas e Relatórios</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Agências</a></li>
+                    <li><a href="#">SAC</a></li>
+                    <li><a href="#">Ouvidoria</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Itaú BBA. Todos os direitos reservados.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
     <!-- Botão flutuante de tradução (inicialmente oculto) -->
     <div id="translation-button" class="hidden">
-        <button><span class="icon">🌎</span> Translate</button>
+        <button><span class="icon">🌎</span> Traduzir</button>
     </div>
     
     <script src="script.js"></script>

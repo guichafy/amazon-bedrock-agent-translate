@@ -12,7 +12,7 @@ Resources:
       Handler: app.lambda_handler
       CodeUri: TranslateFunction
       Description: "Tradu\xE7\xE3o de pt-br para en-us via Bedrock"
-      MemorySize: 256
+      MemorySize: 512
       Environment:
         Variables:
           BEDROCK_MODEL_ID: amazon.titan-text-lite-v1
